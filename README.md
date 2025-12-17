@@ -1,6 +1,8 @@
 # Walmart Sales Cleaning & Analysis
 
-This project walks through cleaning Walmart weekly sales data and tackling key business questions inside a single, portfolio-ready notebook (`walmart_sales_analysis.ipynb`). The work emphasizes clean pandas workflows, reproducibility, and business-oriented storytelling.
+This project analyzes Walmart weekly sales data to answer key business questions through a reproducible notebook workflow that cleans, explores, and visualizes trends across holidays, store economics, and macro indicators. The notebook’s insights are then transformed into an interactive Dash + Plotly dashboard to make the findings easy to explore and share.
+
+<img width="2292" height="3092" alt="walmart-dashboard-img" src="https://github.com/user-attachments/assets/d6231779-ef3a-4064-8265-e3d0dfe30d01" />
 
 ## Dataset
 - Source: [Kaggle – Walmart Sales](https://www.kaggle.com/datasets/mikhail1681/walmart-sales)
@@ -25,7 +27,7 @@ This project walks through cleaning Walmart weekly sales data and tackling key b
    - CPI has only a mild relationship with sales, and fuel price is better viewed as a macro signal than a direct driver of weekly revenue.
 
 ## Tools
-`pandas`, `numpy`, `matplotlib`, `seaborn`
+`pandas`, `numpy`, `matplotlib`, `seaborn`, `dash`, `plotly`
 
 ## Dashboard
 Turn the notebook insights into an interactive dashboard powered by Dash + Plotly (`app.py`):
@@ -39,11 +41,6 @@ Turn the notebook insights into an interactive dashboard powered by Dash + Plotl
 1. (Optional) create a virtual environment.
 2. Install requirements: `pip install dash plotly pandas numpy`.
 3. Launch with `python app.py` and open the printed URL (defaults to http://127.0.0.1:8050/).
-
-## Highlights
-- Demonstrates a repeatable data-wrangling pipeline.
-- Converts stakeholder questions into concise pandas analyses with clear commentary and visuals.
-- Couples statistical summaries with narrative insights so non-technical readers can follow the story.
 
 ## Author
 **Iris Shtutman**   
